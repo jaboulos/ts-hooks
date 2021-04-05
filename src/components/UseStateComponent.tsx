@@ -12,11 +12,13 @@ const UseStateComponent = () => {
         <button onClick={() => setArr([...arr, arr.length + 1])}>
           Add to array
         </button>
-        {JSON.stringify(arr)}
+        <button onClick={() => setArr([])}>Reset array</button>
+        <div>{JSON.stringify(arr)}</div>
       </div>
 
       <div>
         <button onClick={() => setName('Joe')}>Render name</button>
+        <button onClick={() => setName(null)}>Reset name</button>
         {name && <p>{name}</p>}
       </div>
     </div>
