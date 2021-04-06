@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 export interface Beverage {
   name: string;
@@ -14,19 +14,19 @@ export interface Beverage {
 }
 
 // create custom hook instead of using useState and useEffect
-const useFetchData = (
+const useFetchData = <Payload,>(
   url: string
 ): {
-  data: Beverage[] | null;
+  data: Payload[] | null;
   done: boolean;
 } => {
-  const [data, setData] = useState<Beverage[] | null>(null);
+  const [data, setData] = useState<Payload[] | null>(null);
   const [done, setDone] = useState(false);
 
   useEffect(() => {
     fetch(url)
       .then((resp) => resp.json())
-      .then((d: Beverage[]) => {
+      .then((d: Payload[]) => {
         setData(d);
         setDone(true);
       });
@@ -39,13 +39,19 @@ const useFetchData = (
 };
 
 const CustomHookComponent = () => {
-  const { data, done } = useFetchData('/data.json');
+  const { data } = useFetchData<Beverage>('/data.json');
+  // want only the portland taps
+  const portlandTaps = useMemo(
+    () =>
+      (data || []).filter((bev) => bev.producerLocation.includes('Portland')),
+    [data] // whenever data changes, recompute portland taps
+  );
   return (
     <div>
-      {done && (
+      {portlandTaps.length && (
         <img
           // src={data[0].logo} // get a ts warning like this, about null.  Get rid of it with ! to guarantee that it will not be null
-          src={data![13].logo}
+          src={portlandTaps![0].logo}
           alt='Beverage Logo'
         />
       )}
