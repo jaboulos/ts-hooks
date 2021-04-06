@@ -1,3 +1,4 @@
+import UseEffectComponent from './components/UseEffectComponent';
 import UseStateComponent from './components/UseStateComponent';
 
 const App = () => {
@@ -5,6 +6,8 @@ const App = () => {
     <div>
       <h1>useState</h1>
       <UseStateComponent />
+      <h1>useEffectComponent</h1>
+      <UseEffectComponent />
     </div>
   );
 };
