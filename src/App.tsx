@@ -4,6 +4,7 @@ import UseContextComponent from './components/UseContextComponent';
 import UseReducerComponet from './components/UseReducerComponent';
 import UseRefComponent from './components/UseRefComponent';
 import CustomHookComponent from './components/CustomHookComponent';
+import ExtraExamplesComponent from './components/ExtraExamplesComponent';
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
       <UseRefComponent />
       <h1>CustomHookComponent</h1>
       <CustomHookComponent />
+      <h1>ExtraExamplesComponent</h1>
+      <ExtraExamplesComponent />
     </div>
   );
 };
