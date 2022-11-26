@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import UserContext, { UserState } from '../store'; // why does this naming convention work?
+import UserContext, { UserState } from '../../store'; // why does this naming convention work?
 
 // compoonent that consumes the context
 const ConsumerComponent = () => {

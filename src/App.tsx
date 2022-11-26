@@ -1,17 +1,19 @@
-import UseEffectComponent from './components/UseEffectComponent';
-import UseStateComponent from './components/UseStateComponent';
-import UseContextComponent from './components/UseContextComponent';
-import UseReducerComponet from './components/UseReducerComponent';
-import UseRefComponent from './components/UseRefComponent';
-import CustomHookComponent from './components/CustomHookComponent';
-import ExtraExamplesComponent from './components/ExtraExamplesComponent';
+import UseEffectComponent from './components/2020-hooks-tutorials/UseEffectComponent';
+import UseStateComponent from './components/2020-hooks-tutorials/UseStateComponent';
+import UseContextComponent from './components/2020-hooks-tutorials/UseContextComponent';
+import UseReducerComponet from './components/2020-hooks-tutorials/UseReducerComponent';
+import UseRefComponent from './components/2020-hooks-tutorials/UseRefComponent';
+import CustomHookComponent from './components/2020-hooks-tutorials/CustomHookComponent';
+import ExtraExamplesComponent from './components/2020-hooks-tutorials/ExtraExamplesComponent';
 
+// https://www.youtube.com/watch?v=LlvBzyy-558&ab_channel=PedroTech
 import { UseState2 } from './components/2022-hooks-tutorials/UseState2';
+import { UseReducer2022 } from './components/2022-hooks-tutorials/UseReducer2022';
 
 const App = () => {
   return (
     <div>
-      <h3>UseStateComponent</h3>
+      {/* <h3>UseStateComponent</h3>
       <UseStateComponent />
       <h3>UseEffectComponent</h3>
       <UseEffectComponent />
@@ -24,11 +26,14 @@ const App = () => {
       <h3>CustomHookComponent</h3>
       <CustomHookComponent />
       <h3>ExtraExamplesComponent</h3>
-      <ExtraExamplesComponent />
+      <ExtraExamplesComponent /> */}
 
       <h1>2022 hook examples</h1>
-      <h3>UseState2</h3>
+      <h3>UseState2022</h3>
       <UseState2 />
+
+      <h3>UseReducer2022</h3>
+      <UseReducer2022 />
     </div>
   );
 };

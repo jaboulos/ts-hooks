@@ -13,14 +13,14 @@ export const UseState2 = () => {
   };
   return (
     <div>
-      <div>
-        {counter}
+      <div style={{ padding: '10px' }}>
+        <span style={{ paddingRight: '10px' }}>{counter}</span>
         <button onClick={increment}>INCREASE</button>
       </div>
 
-      <div>
+      <div style={{ padding: '10px' }}>
         <input placeholder='enter name' onChange={onChange} />
-        {inputValue}
+        <span style={{ paddingLeft: '10px' }}>{inputValue}</span>
       </div>
     </div>
   );
