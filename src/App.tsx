@@ -6,23 +6,29 @@ import UseRefComponent from './components/UseRefComponent';
 import CustomHookComponent from './components/CustomHookComponent';
 import ExtraExamplesComponent from './components/ExtraExamplesComponent';
 
+import { UseState2 } from './components/2022-hooks-tutorials/UseState2';
+
 const App = () => {
   return (
     <div>
-      <h1>UseStateComponent</h1>
+      <h3>UseStateComponent</h3>
       <UseStateComponent />
-      <h1>UseEffectComponent</h1>
+      <h3>UseEffectComponent</h3>
       <UseEffectComponent />
-      <h1>UseContextComponent</h1>
+      <h3>UseContextComponent</h3>
       <UseContextComponent />
-      <h1>UseReducerComponent</h1>
+      <h3>UseReducerComponent</h3>
       <UseReducerComponet />
-      <h1>UseRefComponent</h1>
+      <h3>UseRefComponent</h3>
       <UseRefComponent />
-      <h1>CustomHookComponent</h1>
+      <h3>CustomHookComponent</h3>
       <CustomHookComponent />
-      <h1>ExtraExamplesComponent</h1>
+      <h3>ExtraExamplesComponent</h3>
       <ExtraExamplesComponent />
+
+      <h1>2022 hook examples</h1>
+      <h3>UseState2</h3>
+      <UseState2 />
     </div>
   );
 };
