@@ -11,6 +11,7 @@ import { UseState2 } from './components/2022-hooks-tutorials/UseState2022';
 import { UseReducer2022 } from './components/2022-hooks-tutorials/UseReducer2022';
 import { UseEffect2022 } from './components/2022-hooks-tutorials/UseEffect2022';
 import { UseRef2022 } from './components/2022-hooks-tutorials/UseRef2022';
+import { UseLayoutEffect2022 } from './components/2022-hooks-tutorials/UseLayoutEffect2022';
 
 const App = () => {
   return (
@@ -41,6 +42,8 @@ const App = () => {
       <UseEffect2022 />
       <h3>UseRef2022</h3>
       <UseRef2022 />
+      <h3>UseLayoutEffect2022</h3>
+      <UseLayoutEffect2022 />
     </div>
   );
 };
