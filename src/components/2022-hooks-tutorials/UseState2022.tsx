@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const UseState2 = () => {
+export const UseState2022 = () => {
   const [counter, setCounter] = useState(0);
   const [inputValue, setInputValue] = useState('name...');
 
