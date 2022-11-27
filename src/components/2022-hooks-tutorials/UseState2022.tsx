@@ -12,7 +12,7 @@ export const UseState2 = () => {
     setInputValue(e.target.value);
   };
   return (
-    <div>
+    <div style={{ padding: '10px', border: 'solid black 1px' }}>
       <div style={{ padding: '10px' }}>
         <span style={{ paddingRight: '10px' }}>{counter}</span>
         <button onClick={increment}>INCREASE</button>

@@ -23,7 +23,7 @@ export const UseReducer2022 = () => {
   });
 
   return (
-    <div>
+    <div style={{ padding: '10px', border: 'solid purple 1px' }}>
       <div>
         <span style={{ padding: '10px' }}>{state.count}</span>
         <span style={{ padding: '10px' }}>
