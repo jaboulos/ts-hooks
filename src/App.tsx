@@ -7,13 +7,14 @@
 // import ExtraExamplesComponent from './components/2020-hooks-tutorials/ExtraExamplesComponent';
 
 // https://www.youtube.com/watch?v=LlvBzyy-558&ab_channel=PedroTech
-import { UseState2022 } from './components/2022-hooks-tutorials/UseState2022';
-import { UseReducer2022 } from './components/2022-hooks-tutorials/UseReducer2022';
-import { UseEffect2022 } from './components/2022-hooks-tutorials/UseEffect2022';
-import { UseRef2022 } from './components/2022-hooks-tutorials/UseRef2022';
-import { UseLayoutEffect2022 } from './components/2022-hooks-tutorials/UseLayoutEffect2022';
+import { UseState2022 } from './components/2022-hooks-tutorials/UseState2022/UseState2022';
+import { UseReducer2022 } from './components/2022-hooks-tutorials/UseReducer2022/UseReducer2022';
+import { UseEffect2022 } from './components/2022-hooks-tutorials/UseEffect2022/UseEffect2022';
+import { UseRef2022 } from './components/2022-hooks-tutorials/UseRef2022/UseRef2022';
+import { UseLayoutEffect2022 } from './components/2022-hooks-tutorials/UseLayoutEffect2022/UseLayoutEffect2022';
 import { UseImperativeHandle2022 } from './components/2022-hooks-tutorials/UseImperativeHandle2022/UseImperativeHandle2022';
 import { UseContext2022 } from './components/2022-hooks-tutorials/UseContext2022/UseContext2022';
+import { UseMemo2022 } from './components/2022-hooks-tutorials/UseMemo2022/UseMemo2022';
 
 const App = () => {
   return (
@@ -50,6 +51,8 @@ const App = () => {
       <UseImperativeHandle2022 />
       <h3>UseContext2022</h3>
       <UseContext2022 />
+      <h3>UseMemo2022</h3>
+      <UseMemo2022 />
     </div>
   );
 };

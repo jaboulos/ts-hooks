@@ -18,7 +18,9 @@ export const UseContext2022 = () => {
 
   return (
     <AppContext.Provider value={{ username, setUsername }}>
-      <Login /> <User />
+      <div style={{ padding: '10px', border: 'solid red 1px' }}>
+        <Login /> <User />
+      </div>
     </AppContext.Provider>
   );
 };
