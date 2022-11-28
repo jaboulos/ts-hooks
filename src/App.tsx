@@ -15,6 +15,7 @@ import { UseLayoutEffect2022 } from './components/2022-hooks-tutorials/UseLayout
 import { UseImperativeHandle2022 } from './components/2022-hooks-tutorials/UseImperativeHandle2022/UseImperativeHandle2022';
 import { UseContext2022 } from './components/2022-hooks-tutorials/UseContext2022/UseContext2022';
 import { UseMemo2022 } from './components/2022-hooks-tutorials/UseMemo2022/UseMemo2022';
+import { UseCallback2022 } from './components/2022-hooks-tutorials/UseCallback2022/UseCallback2022';
 
 const App = () => {
   return (
@@ -53,6 +54,8 @@ const App = () => {
       <UseContext2022 />
       <h3>UseMemo2022</h3>
       <UseMemo2022 />
+      <h3>UseCallback2022</h3>
+      <UseCallback2022 />
     </div>
   );
 };

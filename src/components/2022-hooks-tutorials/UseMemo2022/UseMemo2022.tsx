@@ -35,7 +35,10 @@ export const UseMemo2022 = () => {
   const getLongestName = useMemo(() => findLongestName(data), [toggle]);
 
   return (
-    <div className='App'>
+    <div
+      className='App'
+      style={{ padding: '10px', border: 'solid violet 1px' }}
+    >
       <div> {getLongestName} </div>
 
       <button
