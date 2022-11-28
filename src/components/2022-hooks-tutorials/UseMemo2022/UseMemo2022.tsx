@@ -28,10 +28,10 @@ export const UseMemo2022 = () => {
     }
 
     console.log('THIS WAS COMPUTED');
-
     return longestName;
   };
 
+  //
   const getLongestName = useMemo(() => findLongestName(data), [toggle]);
 
   return (
